@@ -118,8 +118,6 @@ export class AppComponent {
   }
 
   updateTextareaAutocompleteData(key: string, data: any): void {
-    console.log("updateTextareaAutocompleteData");
-    console.log(data);
     for (let i = 0; i < this.textareaAutocomplete.data.length; i++) {
       if (this.textareaAutocomplete.data[i].key === key) {
         this.textareaAutocomplete.data[i].data = data;
